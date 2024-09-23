@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
     <!-- Google font (Lexend) added here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- DaisyUI and Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" 
-    type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom style -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              fontFamily: {
-                lexend: "Lexend",
-              },
-              colors: {
-                pastelGreen: '#B4F461'
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: "Lexend",
+            },
+            colors: {
+              pastelGreen: "#B4F461",
             },
           },
-        }
-      </script>
-</head>
-<body class="font-lexend">
-    <header class="bg-[#F9F7F3] py-[1.25vw]">
-        <nav class="flex items-center justify-around">
-            <!-- blog button -->
-            <button class="bg-pastelGreen w-[5.729vw] h-[2.552vw] rounded-[0.417vw] text-[1.042vw] font-semibold">Blog</button>
-            <!-- donate bangladesh title -->
-            <div class="flex items-center gap-x-[0.833vw]">
-                <img class="w-[2.5vw]" src="./assets/logo.png" alt="">
-                <h3 class="text-[1.2vw] font-semibold">Donate Bangladesh</h3>
-            </div>
-            <!-- main balance -->
-            <div class="flex items-center gap-x-[0.625vw]">
-                <img class="w-[1.458vw]" src="./assets/coin.png" alt="">
-                <h3 id="main-balance" class="text-[1.042vw] font-semibold text-[#111111B3]">5500</h3>
-                <h3 class="text-[1.042vw] font-semibold text-[#111111B3]">BDT</h3>
-            </div>
-        </nav>
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <header class="bg-[#F9F7F3] py-[3.75vw] lg:py-[1.25vw]">
+      <nav class="flex items-center justify-around">
+        <!-- blog button -->
+        <button
+          class="bg-pastelGreen w-[17.188vw] h-[7.656vw] lg:w-[5.729vw] lg:h-[2.552vw] rounded-[1.25vw] lg:rounded-[0.417vw] text-[3.125vw] lg:text-[1.042vw] font-semibold"
+        >
+          Blog
+        </button>
+        <!-- donate bangladesh title -->
+        <div class="flex items-center gap-x-[2.5vw] lg:gap-x-[0.833vw]">
+          <img class="w-[7.5vw] lg:w-[2.5vw]" src="./assets/logo.png" alt="" />
+          <h3 class="text-[3.125vw] lg:text-[1.2vw] font-semibold">Donate Bangladesh</h3>
+        </div>
+        <!-- main balance -->
+        <div class="flex items-center gap-x-[1.875vw] lg:gap-x-[0.625vw]">
+          <img class="w-[4.375vw] lg:w-[1.458vw]" src="./assets/coin.png" alt="" />
+          <h3
+            id="main-balance"
+            class="text-[3.125vw] lg:text-[1.042vw] font-semibold text-[#111111B3]"
+          >
+            5500
+          </h3>
+          <h3 class="text-[3.125vw] lg:text-[1.042vw] font-semibold text-[#111111B3]">BDT</h3>
+        </div>
+      </nav>
     </header>
-    <main>
-
-    </main>
-</body>
+    <main></main>
+  </body>
 </html>
