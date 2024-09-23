@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Ask Any Question</title>
+    <link rel="shortcut icon" href="./assets/faq.png" type="image/x-icon" />
+
+     <!-- Google font (Lexend) added here -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+       rel="stylesheet"
+     />
+
+     <!-- DaisyUI and Tailwind CSS CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                lexend: "Lexend",
+              },
+              colors: {
+                pastelGreen: "#B4F461",
+              },
+            },
+          },
+        };
+    </script>
+</head>
+<body class="font-lexend">
+    <header>
+        <!-- nav section starts here -->
+        <nav class="bg-[#F9F7F3] py-[3.75vw] lg:py-[1.25vw] flex items-center justify-around 
+        lg:gap-x-[8.333vw]">
+            <!-- blog button -->
+            <button
+            id="home-btn" class="bg-pastelGreen w-[17.188vw] h-[7.656vw] lg:w-[5.729vw] lg:h-[2.552vw] rounded-[1.25vw] lg:rounded-[0.417vw] text-[3.125vw] lg:text-[1.042vw] font-semibold"
+            >
+            Home
+            </button>
+            <!-- donate bangladesh title -->
+            <div class="flex items-center gap-x-[2.5vw] lg:gap-x-[0.833vw]">
+            <img class="w-[7.5vw] lg:w-[2.5vw]" src="./assets/logo.png" alt="" />
+            <h3 class="text-[3.125vw] lg:text-[1.2vw] font-semibold">Donate Bangladesh</h3>
+            </div>
+            <!-- main balance -->
+            <div class="flex items-center gap-x-[1.875vw] lg:gap-x-[0.625vw]">
+            <img class="w-[4.375vw] lg:w-[1.458vw]" src="./assets/coin.png" alt="" />
+            <h3
+                id="main-balance"
+                class="text-[3.125vw] lg:text-[1.042vw] font-semibold text-[#111111B3]"
+            >
+                5500
+            </h3>
+            <h3 class="text-[3.125vw] lg:text-[1.042vw] font-semibold text-[#111111B3]">BDT</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- FAQ Heading -->
+        <div class="flex items-center justify-center w-[82vw] mx-auto py-[3.75vw] lg:py-[1.25vw]">
+            <h1 class="text-[5.125vw] lg:text-[2.2vw] font-extrabold">Important FAQ</h1>
+            <img class="w-[10.625vw] lg:w-[5.208vw] h-[10.625vw] lg:h-[5.208vw]" src="./assets/faq.png" alt="">
+        </div>
+        <!-- FAQ SECTION STARTS HERE -->
+        <div class="md:w-[92vw] lg:w-[82vw] mx-auto space-y-[3.125vw] lg:space-y-[1.042vw]">
+            <!-- question-1 -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>the Document Object Model (DOM) is a way to interact with a webpage. It turns the webpage into a tree of objects (like elements and tags), allowing us to use JavaScript to change things like text, styles, or even the entire structure of the page.</p>
+              </div>
+            </div>
+            <!-- question-2 -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?
+              </div>
+              <div class="collapse-content">
+                   <p>JavaScript provides several methods to select DOM elements. Here are some of them:</p>
+                    <br>
+                    <h3><b>Using getElementById:</b></h3>
+                    <p>The getElementById method allows us to select an element by its ID. This method returns the element object if it finds an element with the specified ID, otherwise, it returns null.</p>
+                    <p>For Example:</p>
+                    <p>let element = document.getElementById("myId");</p>
+                    <br>
+                    <h3><b>Using getElementsByClassName:</b></h3>
+                    The getElementsByClassName method allows us to select elements by their class name. It returns a collection of all elements in the document with the specified class name.
+                    <p>For Example:</p>
+                    <p>let elements = document.getElementsByClassName("myClass");</p>
+                    <br>
+                    <h3><b>Using getElementsByTagName:</b></h3>
+                    The getElementsByTagName method allows us to select elements by their tag name. It returns a collection of all elements in the document with the specified tag name.
+                    <p>For Example:</p>
+                    <p>let elements = document.getElementsByTagName("p");</p>
+                    <br>
+                    <h3><b>Using querySelector:</b></h3>
+                    <p>The querySelector method allows us to select the first element that matches a specified CSS selector(s) in the document.</p>
+                    <p>For Example:</p>
+                    <p>let element = document.querySelector(".myClass");</p>
+                    <br>
+                    <h3><b>Using querySelectorAll:</b></h3>
+                    <p>The querySelectorAll method allows us to select all elements that match a specified CSS selector(s) in the document.</p>
+                    <p>For Example:</p>
+                    <p>let elements = document.querySelectorAll(".myClass");</p>
+              </div>
+            </div>
+            <!-- question-3 -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why it is useful?</div>
+              <div class="collapse-content">
+                <p>In the context of DOM, Event delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of attaching event listeners to multiple child elements. When an event occurs on a child element, the event bubbles up the DOM tree, and the parent element's event listener handles the event based on the target element.</p>
+                <br>
+                <p>It is useful because:</p>
+                <br>
+                <p><b>Improved performance:</b> Instead of attaching multiple event listeners to many child elements, we only attach one to the parent, reducing memory usage and speeding up event handling.</p>
+                <br>
+                <p><b>Dynamic elements:</b> Event delegation works even for dynamically added elements (elements created after the page loads), as long as they share the same parent.</p>
+                <br>
+                <p><b>Cleaner code:</b> It simplifies our code by avoiding repetitive event listener attachments.
+                </p>
+              </div>
+            </div>
+            <!-- question-4 -->
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>There are many ways to manipulate an element's attributes and styles using the DOM. <br>
+                   Here, i wrote about some methods:
+                </p>
+                <br>
+                <p>To manipulate an element's attributes and styles using the DOM, we can use:</p>
+                <br>
+                <h3><b>Get an attribute:</b></h3>
+                <p>let value = element.getAttribute("attributeName");</p>
+                <br>
+                <h3><b>Set or change an attribute:</b></h3>
+                <p>element.setAttribute("attributeName", "value");</p>
+                <br>
+                <h3><b>Change a style directly:</b></h3>
+                <p>element.style.propertyName = "value";</p>
+                <p>element.style.color = "red";</p>
+                <br>
+                <h3><b>To add a class:</b></h3>
+                <p>element.classList.add("className");</p>
+                <br>
+                <h3><b>To remove a class:</b></h3>
+                <p>element.classList.remove("className");</p>
+              </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer section -->
+    <footer class="mt-[6.25vw] lg:mt-[15.167vw]">
+        <section class="bg-[#F9F7F3] py-[3.75vw] lg:py-[1.25vw] h-[12vw] lg:h-[5vw]">
+  
+        </section>
+    </footer>
+    <script src="./js/home.js"></script>
+</body>
+</html>
