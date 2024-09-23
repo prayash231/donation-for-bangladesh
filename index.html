@@ -93,22 +93,59 @@
              <button class="w-[17.188vw] lg:w-[5.729vw] h-[6.875vw] lg:h-[2.292vw] rounded-[1.25vw] lg:rounded-[0.417vw] bg-[#1111110D] flex items-center justify-center gap-x-[1.25vw] 
              lg:gap-x-[0.417vw]">
                <img class="w-[4.375vw] lg:w-[1.458vw]" src="./assets/coin.png" alt="">
-               <p class="text-[#111111B3] text-[2.5vw] lg:text-[0.833vw] font-normal">0</p>
+               <p id="noakhali-total-amount" class="text-[#111111B3] text-[2.5vw] lg:text-[0.833vw] font-normal">0</p>
                <p class="text-[#111111B3] text-[2.5vw] lg:text-[0.833vw] font-normal">BDT</p>
              </button>
 
              <!-- Noakhali flood donation heading -->
              <h3 class="text-[3.125vw] lg:text-[1.042vw] font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
 
-             <!-- Noakhali flood donation descripton -->
-             <p class="text-[2.5vw] lg:text-[0.833vw] text-[#111111B3] font-light text-justify"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+             <!-- Noakhali flood donation descripton for large devices -->
+             <p class="hidden lg:block lg:text-[0.833vw] text-[#111111B3] font-light text-justify"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+             <!-- Noakhali flood donation descripton for large devices -->
+             <p class="text-[2.5vw] text-[#111111B3] font-light text-justify lg:hidden"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-             <!-- input donation amount -->
-             <input class="block w-[72vw] lg:w-[27.187vw] h-[8.75vw] lg:h-[2.917vw] rounded-[1.25vw] lg:rounded-[0.417vw] p-[2.813vw] lg:p-[0.938vw] border border-[#1111111A] text-[2.5vw] 
+             <!-- Noakhali input donation amount -->
+             <input id="noakhali-input-value" class="block w-[72vw] lg:w-[27.187vw] h-[8.75vw] lg:h-[2.917vw] rounded-[1.25vw] lg:rounded-[0.417vw] p-[2.813vw] lg:p-[0.938vw] border border-[#1111111A] text-[2.5vw] 
              lg:text-[0.833vw] font-light focus:outline-none focus:ring-0 focus:border-gray-300" type="text" placeholder="Write Donation Amount">
 
-             <!-- donate now button -->
+             <!-- Noakhali donate now button -->
              <button id="donate-noakhali-btn" class="bg-pastelGreen w-[72vw] lg:w-[27.187vw] h-[8.75vw] 
+             lg:h-[2.917vw] rounded-[1.25vw] lg:rounded-[0.417vw] text-[3.125vw] lg:text-[1.042vw] font-semibold">
+              Donate Now
+             </button>
+           </div>
+        </section>
+
+        <!-- donate for Feni section -->
+        <section class="border border-[#1111111A] rounded-[2.5vw] lg:rounded-[0.833vw] w-[82vw] mt-[5vw]  lg:m-[1.667vw] mx-auto lg:mx-0 px-[5vw] lg:px-0 py-[5vw] lg:py-[1.667vw] flex flex-col 
+        gap-y-[3.125vw] lg:gap-y-0 lg:flex-row lg:justify-evenly lg:items-center">
+            <!-- Feni img -->
+            <img class="w-[81.563vw] lg:w-[27.187vw] h-[68.906vw] lg:h-[22.969vw]" src="./assets/feni.png" alt="">
+            <!-- Feni input section -->
+            <div class="space-y-[3.125vw] lg:space-y-[1.042vw]">
+             <!-- Feni flood donation balance -->
+             <button class="w-[17.188vw] lg:w-[5.729vw] h-[6.875vw] lg:h-[2.292vw] rounded-[1.25vw] lg:rounded-[0.417vw] bg-[#1111110D] flex items-center justify-center gap-x-[1.25vw] 
+             lg:gap-x-[0.417vw]">
+               <img class="w-[4.375vw] lg:w-[1.458vw]" src="./assets/coin.png" alt="">
+               <p id="feni-total-amout" class="text-[#111111B3] text-[2.5vw] lg:text-[0.833vw] font-normal">600</p>
+               <p class="text-[#111111B3] text-[2.5vw] lg:text-[0.833vw] font-normal">BDT</p>
+             </button>
+
+             <!-- Feni flood donation heading -->
+             <h3 class="text-[3.125vw] lg:text-[1.042vw] font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
+
+             <!-- Feni flood donation descripton for large devices -->
+             <p class="hidden lg:block lg:text-[0.833vw] text-[#111111B3] font-light text-justify"> The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
+             <!-- Feni flood donation descripton for Small devices --> 
+             <p class="text-[2.5vw] text-[#111111B3] font-light text-justify lg:hidden">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+
+             <!-- Feni input donation amount -->
+             <input id="feni-input-value" class="block w-[72vw] lg:w-[27.187vw] h-[8.75vw] lg:h-[2.917vw] rounded-[1.25vw] lg:rounded-[0.417vw] p-[2.813vw] lg:p-[0.938vw] border border-[#1111111A] text-[2.5vw] 
+             lg:text-[0.833vw] font-light focus:outline-none focus:ring-0 focus:border-gray-300" type="text" placeholder="Write Donation Amount">
+
+             <!-- Feni donate now button -->
+             <button id="donate-feni-btn" class="bg-pastelGreen w-[72vw] lg:w-[27.187vw] h-[8.75vw] 
              lg:h-[2.917vw] rounded-[1.25vw] lg:rounded-[0.417vw] text-[3.125vw] lg:text-[1.042vw] font-semibold">
               Donate Now
              </button>
