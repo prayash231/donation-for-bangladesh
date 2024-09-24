@@ -16,6 +16,16 @@ getId('donate-noakhali-btn').addEventListener('click', function(){
     getId('main-balance').innerText = reduceBalance;
     getId('noakhali-total-amount').innerText = noakhaliFinalAmount;
     getId('noakhali-input-value').value = '';
+
+    // history message
+    const historyMsg = document.createElement('div');
+    historyMsg.className = 'border border-[#1111111A] rounded-[2.5vw] lg:rounded-[0.833vw] w-[82vw] mt-[5vw] lg:m-[1.667vw] mx-auto lg:mx-0 space-y-5 py-[5vw] px-[5vw] lg:px-[1.667vw] lg:py-[1.667vw]';
+    historyMsg.innerHTML = `
+        <h3> ${noakhaliInputValue} Taka is Donated for Flood Relief in Noakhali,Bangladesh</h3>
+        <p>Date : ${new Date().toLocaleString()} (Bangladesh Standard Time)</p>
+    `;
+    const historySection = document.getElementById('history-section');
+    historySection.insertBefore(historyMsg, historySection.firstChild);
 });
 
 // feni section calculation
@@ -36,6 +46,16 @@ getId('donate-feni-btn').addEventListener('click', function(){
     getId('main-balance').innerText = reduceBalance;
     getId('feni-total-amount').innerText = feniFinalAmount;
     getId('feni-input-value').value = '';
+
+    // history message
+    const historyMsg = document.createElement('div');
+    historyMsg.className = 'border border-[#1111111A] rounded-[2.5vw] lg:rounded-[0.833vw] w-[82vw] mt-[5vw] lg:m-[1.667vw] mx-auto lg:mx-0 space-y-5 py-[5vw] px-[5vw] lg:px-[1.667vw] lg:py-[1.667vw]';
+    historyMsg.innerHTML = `
+        <h3> ${feniInputValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
+        <p>Date : ${new Date().toLocaleString()} (Bangladesh Standard Time)</p>
+    `;
+    const historySection = document.getElementById('history-section');
+    historySection.insertBefore(historyMsg, historySection.firstChild);
 });
 
 // quota section calculation
@@ -56,6 +76,16 @@ getId('donate-quota-btn').addEventListener('click', function(){
     getId('main-balance').innerText = reduceBalance;
     getId('quota-total-amount').innerText = quotaFinalAmount;
     getId('quota-input-value').value = '';
+
+    // history message
+    const historyMsg = document.createElement('div');
+    historyMsg.className = 'border border-[#1111111A] rounded-[2.5vw] lg:rounded-[0.833vw] w-[82vw] mt-[5vw] lg:m-[1.667vw] mx-auto lg:mx-0 space-y-5 py-[5vw] px-[5vw] lg:px-[1.667vw] lg:py-[1.667vw]';
+    historyMsg.innerHTML = `
+        <h3> ${quotaInputValue} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+        <p>Date : ${new Date().toLocaleString()} (Bangladesh Standard Time)</p>
+    `;
+    const historySection = document.getElementById('history-section');
+    historySection.insertBefore(historyMsg, historySection.firstChild);
 });
 
 

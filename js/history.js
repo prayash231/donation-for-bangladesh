@@ -4,6 +4,7 @@ getId('history-btn').addEventListener('click', function(){
     getId('history-btn').classList.add('bg-pastelGreen');
     getId('history-btn').classList.remove('border', 'border-[#1111114D]', 'text-[#111111B3]');
     getId('main-section').classList.add('hidden');
+    getId('history-section').classList.remove('hidden');
 });
 
 

@@ -4,6 +4,7 @@ getId('donation-btn').addEventListener('click', function(){
     getId('donation-btn').classList.add('bg-pastelGreen');
     getId('donation-btn').classList.remove('border', 'border-[#1111114D]', 'text-[#111111B3]');
     getId('main-section').classList.remove('hidden');
+    getId('history-section').classList.add('hidden');
 });
 
 
