@@ -1,106 +1,18 @@
-getId('donate-noakhali-btn').addEventListener('click', function(){
-    const mainBalance = getNumber('main-balance');
-    const noakhaliTotalAmount = getNumber('noakhali-total-amount');
-    const noakhaliInputValue = getInputValue('noakhali-input-value');
-    if(noakhaliInputValue <= 0 || isNaN(noakhaliInputValue)){
-        alert("Invalid donation amount");
-        return;   
-    }
-    const noakhaliFinalAmount = noakhaliTotalAmount + noakhaliInputValue;
-    const reduceBalance = mainBalance - noakhaliInputValue;
-    if(reduceBalance < 0){
-        alert("Invalid donation amount");
-        return;
-    }
-    getId('main-balance').innerText = reduceBalance;
-    getId('noakhali-total-amount').innerText = noakhaliFinalAmount;
-    getId('noakhali-input-value').value = '';
+getId('donation-btn').addEventListener('click', function(){
+    getId('history-btn').classList.remove('bg-pastelGreen');
+    getId('history-btn').classList.add('border', 'border-[#1111114D]', 'text-[#111111B3]');
+    getId('donation-btn').classList.add('bg-pastelGreen');
+    getId('donation-btn').classList.remove('border', 'border-[#1111114D]', 'text-[#111111B3]');
+    getId('main-section').classList.remove('hidden');
 });
 
 
-getId('donate-feni-btn').addEventListener('click', function(){
-    const mainBalance = getNumber('main-balance');
-    const feniTotalAmount = getNumber('feni-total-amount');
-    const feniInputValue = getInputValue('feni-input-value');
-    if(feniInputValue <= 0 || isNaN(feniInputValue)){
-        alert("Invalid donation amount");
-        return;   
-    }
-    const feniFinalAmount = feniTotalAmount + feniInputValue;
-    const reduceBalance = mainBalance - feniInputValue;
-    if(reduceBalance < 0){
-        alert("Invalid donation amount");
-        return;
-    }
-    getId('main-balance').innerText = reduceBalance;
-    getId('feni-total-amount').innerText = feniFinalAmount;
-    getId('feni-input-value').value = '';
-});
-
-getId('donate-quota-btn').addEventListener('click', function(){
-    const mainBalance = getNumber('main-balance');
-    const quotaTotalAmount = getNumber('quota-total-amount');
-    const quotaInputValue = getInputValue('quota-input-value');
-    if(quotaInputValue <= 0 || isNaN(quotaInputValue)){
-        alert("Invalid donation amount");
-        return;   
-    }
-    const quotaFinalAmount = quotaTotalAmount + quotaInputValue;
-    const reduceBalance = mainBalance - quotaInputValue;
-    if(reduceBalance < 0){
-        alert("Invalid donation amount");
-        return;
-    }
-    getId('main-balance').innerText = reduceBalance;
-    getId('quota-total-amount').innerText = quotaFinalAmount;
-    getId('quota-input-value').value = '';
-});
-
-
-
-
-
-/* getId('donate-noakhali-btn').addEventListener('click', function(){
-    const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
-    const noakhaliTotalAmount = parseFloat(document.getElementById('noakhali-total-amount').innerText);
-    const noakhaliInputValue = parseFloat(document.getElementById('noakhali-input-value').value);
-
-    if(noakhaliInputValue <= 0 || isNaN(noakhaliInputValue)){
-        alert("Invalid donation amount");
-        return;   
-    }
-    
-    const noakhaliFinalAmount = noakhaliTotalAmount + noakhaliInputValue;
-    const reduceBalance = mainBalance - noakhaliInputValue;
-
-    if(reduceBalance < 0){
-        alert("Invalid donation amount");
-        return;
-    }
-
-    document.getElementById('noakhali-total-amount').innerText = noakhaliFinalAmount;
-    document.getElementById('main-balance').innerText = reduceBalance;
-
-    document.getElementById('noakhali-input-value').value = '';  
-}); */
-
-
-// document.getElementById('donate-noakhali-btn').addEventListener('click', function(){
-//     const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
-//     const noakhaliTotalAmount = parseFloat(document.getElementById('noakhali-total-amount').innerText);
-//     const noakhaliInputValue = parseFloat(document.getElementById('noakhali-input-value').value);
-    
-//     const noakhaliFinalAmount = noakhaliTotalAmount + noakhaliInputValue;
-//     const reduceBalance = mainBalance - noakhaliInputValue;
-
-//     document.getElementById('noakhali-total-amount').innerText = noakhaliFinalAmount;
-//     document.getElementById('main-balance').innerText = reduceBalance;
-
-//     document.getElementById('noakhali-input-value').value = '';
+// document.getElementById('donation-btn').addEventListener('click', function(){
+//     document.getElementById('history-btn').classList.remove('bg-pastelGreen');
+//     document.getElementById('history-btn').classList.add('border', 'border-[#1111114D]', 
+//     'text-[#111111B3]');
+//     document.getElementById('donation-btn').classList.add('bg-pastelGreen');
+//     document.getElementById('donation-btn').classList.remove('border', 'border-[#1111114D]', 
+//     'text-[#111111B3]');
+//     document.getElementById('main-section').classList.remove('hidden');
 // });
-
-
-
-
-
-
